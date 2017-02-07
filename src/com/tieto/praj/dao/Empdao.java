@@ -11,7 +11,11 @@ public class Empdao {
 	    this.template = template;  
 	}  
 	public int save(Emp p){  
-	    String sql="insert into tcashuser(mobile_no,amount) values("+p.getMob_no()+","+p.getAmount()+")";  
-	    return template.update(sql);  
-	}  
+	    String sql="insert into tcashuser(mobile_no,amount,comment1) values("+p.getMob_no()+","+p.getAmount()+","+p.getComment1()+")";  
+	    return template.update(sql); 
+	   
+	    
+	    
+	}
+	
 }
