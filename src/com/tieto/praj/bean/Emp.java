@@ -1,15 +1,21 @@
 package com.tieto.praj.bean;
+
+import java.math.BigInteger;
+
 public class Emp {
-	private Integer mob_no;
+	private BigInteger mob_no;
 	private Integer amount;
-	private String comment1;
+	private String comm;
 	
-	public Integer getMob_no() {
+	
+	
+	/*public Integer getMob_no() {
 		return mob_no;
 	}
 	public void setMob_no(Integer mob_no) {
 		this.mob_no = mob_no;
-	}
+		}*/
+	
 	public Integer getAmount() {
 		return amount;
 	}
@@ -17,11 +23,19 @@ public class Emp {
 		this.amount = amount;
 	
 	}
-	public String getComment1() {
-		return comment1;
+	public String getComm() {
+		return comm;
 	}
-	public void setComment1(String comment1) {
-		this.comment1 = comment1;
+	public void setComm(String comm) {
+		this.comm = comm;
+	}
+	public BigInteger getMob_no() {
+		return mob_no;
+	}
+	public void setMob_no(BigInteger mob_no) {
+		this.mob_no = mob_no;
 	}
 	
 }
+
+
